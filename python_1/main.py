@@ -32,7 +32,7 @@ def test(env, episodes=5, agent='random'):
 
 def base_model(height, width, channels, actions):
     model = tf.keras.models.Sequential()
-    model.add(tf.keras.layers.Conv2D(32, (8,8), strides=(4,4), activation='relu', input_shape=(3, height, width, channels)))
+    model.add(tf.keras.layers.Conv2D(32, (8,8), strides=(4,4), activation='relu', input_shape=( height, width, channels)))
     model.add(tf.keras.layers.Conv2D(64, (4,4), strides=(2,2), activation='relu'))
     model.add(tf.keras.layers.Conv2D(64, (3,3), activation='relu'))
     model.add(tf.keras.layers.Flatten())
