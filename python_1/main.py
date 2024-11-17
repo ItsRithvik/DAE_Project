@@ -12,7 +12,7 @@ discount_factor = 0.99
 epsilon = 1.0         # Initial exploration rate
 epsilon_min = 0.1     # Minimum exploration rate
 epsilon_decay = 0.995 # Decay rate for epsilon
-episodes = 1000       # Number of episodes for training
+episodes = 1000     # Number of episodes for training
 
 # Create a Q-table
 q_table = np.zeros(num_buckets + (env.action_space.n,))
@@ -50,11 +50,11 @@ for episode in range(episodes):
 
         # Check if the episode is done due to falling
         if done:
-            reward = -100
+            reward = -30
         else:
             # Apply penalties based on the pole's angle
             if abs(pole_angle) > angle_threshold:
-                reward = -(abs(pole_angle) / np.radians(50))/50  # Scaled penalty
+                reward = -(abs(pole_angle) / np.radians(50))/10  # Scaled penalty
             else:
                 reward = 1  # Small reward for staying upright
 
