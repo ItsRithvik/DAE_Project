@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Stock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#chart">Chart</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>EXAMPLE STOCK</h1>
+    </header>
+    <main>
+      <div class="chart-section" id="chart">
+        <div class="chart">
+            <img id="stock_image" src="chart-placeholder.png" alt="Stock Chart">
+        </div>
+        <div class="legend">
+          <div class="legend-item">
+            <span class="box recent-trends"></span> Recent trends
+          </div>
+          <div class="legend-item">
+            <span class="box predicted-trends"></span> Predicted trends
+          </div>
+        </div>
+      </div>
+      <aside class="info-panel" id="info">
+        <div class="info-item">
+          <p>PREDICTED GAIN</p>
+          <p class="value gain">--%</p>
+        </div>
+        <div class="info-item">
+          <p>RISK</p>
+          <p class="value risk">--%</p>
+        </div>
+        <div class="info-item">
+          <p>RECOMMENDED INVESTMENT</p>
+          <p class="value investment">$----.--</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
