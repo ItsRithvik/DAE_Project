@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-list li {
+    margin: 0;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Chart Section */
+  .chart-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .chart img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+  }
+  
+  .legend {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .legend-item .box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .recent-trends {
+    background-color: #1057bb;
+  }
+  
+  .predicted-trends {
+    background-color: #ff851b;
+  }
+  
+  /* Info Panel */
+  .info-panel {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .info-item {
+    text-align: center;
+  }
+  
+  .info-item p {
+    margin: 0;
+  }
+  
+  .info-item .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .gain {
+    color: green;
+  }
+  
+  .risk {
+    color: red;
+  }
+  
+  .investment {
+    color: #333;
+  }
+
+  #stock_image {
+    min-height: 40%;
+    width: auto;
+  }
+  
