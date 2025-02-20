@@ -10,9 +10,9 @@
   <div class="container">
     <nav>
       <ul class="nav-list">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#chart">Chart</a></li>
-        <li><a href="#info">Info</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#chart">Search</a></li>
+        <li><a href="stock_page.html">Example Stock</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -36,18 +36,24 @@
       <aside class="info-panel" id="info">
         <div class="info-item">
           <p>PREDICTED GAIN</p>
-          <p class="value gain">--%</p>
+          <p class="value gain"><span id="value">50</span>%</p>
         </div>
         <div class="info-item">
           <p>RISK</p>
-          <p class="value risk">--%</p>
+          <p class="value risk"><span id="risk">30</span>%</p>
         </div>
         <div class="info-item">
           <p>RECOMMENDED INVESTMENT</p>
-          <p class="value investment">$----.--</p>
+          <p class="value investment">$<span id="rec"></span></p>
         </div>
       </aside>
     </main>
   </div>
+  <footer>
+    <p><span id="year"></span> All rights reserved</p>
+</footer>
+<script src="javascript.js"></script>
 </body>
+
+
 </html>
